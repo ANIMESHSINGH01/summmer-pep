@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homework</title>
+  <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+  <div class="flex">
+    <h1>Create an Account</h1>
+    <div id="f">
+      <label for="fullname" style="text-align: left;">Full Name</label>
+      <input type="text" id="fullname a">
+    </div><br>
+    <div>
+      <label id="email" for="email">Email</label>
+      <input type="text" id="email a">
+    </div><br>
+    <div>
+      <label for="password">Password</label>
+      <div class="password-container">
+        <input id="password" type="password" class="password-input">
+        <button id="togglePassword" class="toggle-password">👁️</button>
+      </div>
+    </div><br>
+    <div id="Phone">
+      <label for="number">Phone number</label>
+      <input type="text" id="number a">
+    </div><br>
+    <div>
+      <button type="submit" id="signUp">Sign Up</button>
+    </div>
+    <div>
+      <p>OR</p>
+    </div>
+    <div class="signup-container">
+      <img id="imgH" src="./google-photo.png" alt="Google Logo">
+      <button id="submit" type="submit">Sign up with Google</button>
+    </div>
+    <div id="account">
+      <p>Already have Account? <span id="login">Login</span></p>
+    </div>
+  </div>
+
+  <script>document.getElementById('togglePassword').addEventListener('click', function () {
+      const passwordField = document.getElementById('password');
+      const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+      passwordField.setAttribute('type', type);
+      this.textContent = type === 'password' ? '👁️' : '🙈'; // Change icon
+    });
+
+    document.getElementById("signUp").addEventListener("click", function () {
+      // Redirect to the next page
+      window.location.href = "contact.html";
+    });
+    document.getElementById("submit").addEventListener("click", function () {
+      // Redirect to the next page
+      window.location.href = "contact.html";
+    });
+
+
+  </script>
+
+
+
+</body>
+
+</html>

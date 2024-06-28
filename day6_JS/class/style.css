@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+section{
+    padding-bottom: 8px;
+    border-bottom:solid black 2px;
+    margin-bottom: 1px solid grey ;
+}
+
+.cs1{
+    background-color: aquamarine;
+    /* text-decoration-line: overline ; */
+}
+
+.name{
+    padding: 12px 24px;
+    color: red;
+}
+
+.email{
+    padding: 12px 24px;
+    color: red;
+}

@@ -1,0 +1,36 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* .parent {
+  background-color: aquamarine;
+  padding: 30px;
+}
+.child {
+  background-color: yellow;
+  width: calc(100%-48px);
+}
+@media (width <= 800px) {
+  .parent {
+    background-color: yellow;
+  }
+}
+@media (width <= 1000px) {
+  .parent {
+    background-color: green;
+  }
+} */
+.parent {
+  height: 500px;
+  background-color: yellow;
+  margin: 100px;
+}
+.child {
+  height: 40px;
+  width: 40px;
+  position: sticky;
+  top:50px;
+  background-color: blueviolet;
+}

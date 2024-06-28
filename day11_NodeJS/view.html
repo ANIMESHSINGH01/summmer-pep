@@ -6,16 +6,138 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Shop</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
         body {
-            background-color: antiquewhite;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        nav {
+            height: 10vh;
+            background-color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            color: white;
+            font-size: 24px;
+        }
+        nav .logo {
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        main {
+            padding: 48px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-details {
+            width: 80%;
+            max-width: 1200px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-details img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product-details h2 {
+            margin: 20px 0;
+            font-size: 32px;
+            color: #333;
+        }
+        .product-details h4 {
+            font-size: 24px;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+        .product-details p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .product-details .additional-info {
+            width: 100%;
+            background-color: #f7f7f7;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .product-details .additional-info h3 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+        .product-details .additional-info ul {
+            list-style: disc;
+            padding-left: 20px;
+            color: #555;
+        }
+        footer {
+            height: 10vh;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            padding: 20px;
+        }
+        footer a {
+            color: #ffd700;
+            text-decoration: none;
+            margin-left: 10px;
         }
     </style>
 </head>
 
 <body>
-    <nav></nav>
-    <main>$VIEW$</main>
-    <footer></footer>
+    <nav>
+        <div class="logo">MyStore</div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/products">Products</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="product-details">
+            $VIEW$
+        </div>
+    </main>
+    <footer>
+        <div>Contact us at support@mystore.com</div>
+        <a href="/contact">Get in Touch</a>
+    </footer>
 </body>
 
 </html>

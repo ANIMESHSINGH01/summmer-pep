@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    height:95vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(239, 243, 247);
+
+}
+.flex{
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    background-color: white;
+    border-radius:0.7em;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 0 0 50px 0px #c2bfbf;
+}
+#signUp{
+    display:flex;
+    justify-content:center;
+    border-radius: 0.8em;
+    border-color:rgb(23, 190, 101);
+    width:66%;
+    margin:0px 0px 0px 42px;
+    padding:3.5px;
+    background-color:rgb(23, 190, 101);
+    color:white;
+    cursor: pointer;
+    flex-grow:1;
+}
+.signup-container{
+    display:flex;
+    justify-content:center;
+    border:1px solid black;
+    border-radius: 0.8em;
+    width:66%;
+    margin:0px 0px 0px 42px;
+    padding:3.5px;
+    background-color:black;
+
+    cursor: pointer;
+    
+}
+#signUp:hover{
+    cursor: pointer;
+    background-color: #3e8e41;
+    transform: translateY(4px);
+    scale: 1.1;
+}
+#imgH{
+    width:20px;
+    height:20px;
+    /* border:1px solid; */
+}
+#submit{
+    border:none;
+    background-color:black;
+    color:aliceblue;
+    cursor: pointer; /* Pointer/hand icon on hover */
+    transition: background-color 0.3s, transform 0.3s;
+}
+#submit:hover{
+    cursor: pointer;
+    background-color:black;
+    transform: translateY(4px);
+}
+#login{
+    color:rgb(41, 238, 41);
+}
+
+#account{
+    margin-bottom:50px;
+    
+}
+#account>p{
+    font-size: x-small;
+}
+label{
+    display: flex;
+    padding-left: 45px;
+}
+span{
+    cursor: pointer;
+}
+
+.password-container {
+    position: relative;
+    display: inline-block;
+}
+
+.password-input {
+    padding-right: 40px; 
+    width: 148px;
+    height:0.5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+.phone{
+    flex-grow: 1;
+}

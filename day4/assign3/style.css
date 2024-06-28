@@ -1,0 +1,39 @@
+body > div {
+  background-color: greenyellow;
+  margin: 40px;
+  height: 200px;
+  width: 200px;
+}
+.c1,
+.c2,
+.c3,
+.c4 {
+  background-color: green;
+  color: white;
+  font-size: 32px;
+  height: 75px;
+  width: 75px;
+  text-align: center;
+}
+
+.c1{
+
+    position: absolute;
+    /* top: 25px;
+    left: 25px; */
+    background-color: aquamarine;
+}
+.c2 {
+  position: relative;
+  left: 75px;
+}
+.c3 {
+  position: absolute;
+  background-color: yellow;
+  height: 180px;
+  width: 180px;
+}
+.c4{
+    position: relative;
+    z-index: 1;
+}

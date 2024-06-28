@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative; /* Set body as the reference point for absolute positioning */
+}
+.container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ccc;
+    margin: 20px;
+}
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #ffa0a0;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.c1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.c2 {
+    position: absolute;
+    top: 36px;
+    right: 113px;
+}
+.c3 {
+    position: absolute;
+    top: 10px; 
+    right: -62px; 
+}
+.c4 {
+    position: absolute;
+    bottom: 139px;
+    left: 10px;
+}
+.c5 {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+}
+.c6 {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+}
+.c8 {
+    position: absolute;
+    bottom: 9px; 
+    left: 9px; 
+}
+.c7 {
+    position: absolute;
+    bottom: 11px; 
+    left: 11px;
+}

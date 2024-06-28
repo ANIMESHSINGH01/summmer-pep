@@ -3,17 +3,19 @@ const fsPromises = require("fs/promises");
 const fs = require("fs");
 const url = require("url");
 
-const dataText = fs.readFileSync(`${__dirname}/data.json`, 'utf-8');
+// Read data.json file
+const dataText = fs.readFileSync(`${__dirname}/data.json`, "utf-8");
 const data = JSON.parse(dataText);
 
 const app = http.createServer(async (req, res) => {
-  res.writeHead(200, { "Content-Type": "text/html" });
   const { query, pathname } = url.parse(req.url, true);
+  console.log(`Request received for: ${pathname}`);
 
   try {
     switch (pathname) {
       case "/": {
         const bf = await fsPromises.readFile(`${__dirname}/homepage.html`);
+        res.writeHead(200, { "Content-Type": "text/html" });
         res.end(bf);
         break;
       }
@@ -30,15 +32,20 @@ const app = http.createServer(async (req, res) => {
             </div>`;
         }
         text = text.replace("$PRODUCTS$", productsText);
+        res.writeHead(200, { "Content-Type": "text/html" });
         res.end(text);
         break;
       }
       case "/view": {
         const product = data.find((elem) => elem.id == query.id);
         if (!product) {
+          console.log(`Product with ID ${query.id} not found`);
+          res.writeHead(404, { "Content-Type": "text/html" });
           res.end("<h2>Product not found!</h2>");
           break;
         }
+
+        
         const bf = await fsPromises.readFile(`${__dirname}/view.html`);
         let text = bf.toString();
         text = text.replace(
@@ -50,10 +57,12 @@ const app = http.createServer(async (req, res) => {
             <p>${product.description}</p>
           </div>`
         );
+        res.writeHead(200, { "Content-Type": "text/html" });
         res.end(text);
         break;
       }
       default: {
+        res.writeHead(404, { "Content-Type": "text/html" });
         res.end("Oops! Page not found...");
       }
     }

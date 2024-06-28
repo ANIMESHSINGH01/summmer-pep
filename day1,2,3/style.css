@@ -1,0 +1,53 @@
+h4{
+color:red
+}
+.hello.heading2{
+ font-size: 40px;
+}
+.hello,.heading2{
+    font-style: italic;
+    
+}
+.hero{
+    color:deeppink;
+    background-color:aqua;
+    padding: 12px;
+    margin: 10px;
+    border: 2px solid black;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+.percentage{
+    background-color: aqua;
+    width: 100%;
+    text-align: center;
+}
+
+.center{
+    background-color: aqua;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+.btn{
+    display: block;
+    background-color:rgb(16, 242, 114);
+    color:white;
+    width: fit-content;
+    margin: 10px auto;
+    font-size: 20px;
+    padding: 0 1em;
+    border-radius:0.7em;
+    border:none;
+}
+.big{
+    font-size: 30px;
+}
+.small{
+    font-size: 14px;
+}
+
+

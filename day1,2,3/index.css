@@ -1,0 +1,23 @@
+/* .container{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    border:2px solid black;
+
+} */
+.box{
+    background-color: aqua;
+    margin:2px;
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    border: 2px solid black ;
+
+}
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border:2px solid black;
+}
